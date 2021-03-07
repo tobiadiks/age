@@ -1,37 +1,140 @@
-body{
-background-color: #ff9d2b;
-height:420px;
-width:340px;
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: inline-block;
 }
 
-.form{
-margin:40px;
-font-family: "Monospace";
-font-size:20px;
-justify-content: "center";
-
+section {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  min-height: 50%;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
 }
 
-.input{
-font-size:5px;
-height:20px;
-
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.button{
-background-color:#5000ff;
-color:#ffeaff;
-border-radius:8px;
-margin-left:50px;
+header .logo {
+  position: relative;
+  text-decoration: none;
+  color: #1d1bad;
+  font-weight: bold;
+  font-size: 40px;
+}
+header ul {
+  position: relative;
+  display: flex;
 }
 
-.result{
-color:#fff;
-font-weight:30px;
-font-size:20px;
-margin:40px;
+header ul li {
+  list-style: none;
 }
 
-label{
-color:#fff;
+header ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 400px;
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 100px;
+  
+}
+
+.content .textbox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textbox h2 {
+  color: #333;
+  font-size: 4em;
+  line-height: 1.2em;
+  font-weight: 500;
+}
+
+.content .textbox h2 span {
+  background-color: #1d1bad;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 1.0em;
+  font-weight: 600;
+}
+
+.form
+{
+  
+    width: 90%;
+    position: relative;
+    display: block;
+    padding-top: 70 px;
+}
+
+.form .label
+{
+  padding-right: 10px;
+  font-size: 25px; 
+  font-weight: 100px;
+  
+}
+
+.form input
+{
+  position: relative;
+  font-size: 25px;
+  padding-left: 40px;
+  color: #777;
+  border: solid #1d1bad;
+  width: 90%;
+}
+
+.form button
+{
+  position: relative;
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #aaa;
+  padding: 5px;
+  
+}
+
+.form button:hover
+{
+  position: relative;
+  background: #1d1bad;
+  border: 1px solid #ccc;
+  color: #eee;
+  padding: 5px;
+  
+}
+
+.content span
+{
+  padding-top: 20px;
+  font-size: 100px;
+  text-align: center;
 }

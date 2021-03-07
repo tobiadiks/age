@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-				<title>Age Calculator</title>
+	<meta charset="UTF-8">
+	<title>Age Calculator</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" href="style.css">
+
 
 <body>
-	
-	<div class="form">
-					<p>
-									<label>Year:</label><input class="input" id="year" placeholder="insert year">				
-									</input>
-					</p>
-					<button class="button" onclick="ages()">Calculate</button>
-					</div>
-	
-	<p>
-	<span class="result" id="result">Waiting for your input...</span>
-	</p>
+	<section>
+		<header><a class="logo" href="#">RadioDating</a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Profile</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</header>
+		<div class="content">
+			<div class="textbox">
+				<h2>I can calculate your
+					<span>Age</span></h2>
+			</div>
+			<div class="form">
+				<label class="label">Year:</label>
+				<input class="input" id="year" placeholder="e.g 1996">
+				</input>
+				<button onclick="ages()">Calculate</button>
+			</div>
+
+			<span class="result" id="result">Waiting for your input...</span>
+
+
+
+		</div>
+
+	</section>
+
+
 </body>
-<script src = "main.js"></script>
+<script src="main.js"></script>
+
 </html>
